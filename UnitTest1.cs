@@ -4,7 +4,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.InternetExplorer;
+using OpenQA.Selenium.InternetExplorer
 
 namespace testproj2
 {
