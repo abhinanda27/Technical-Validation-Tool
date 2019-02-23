@@ -1,0 +1,126 @@
+{
+  "BVT_TestData": [
+
+    {
+      "URL": "https://technicalvalidation-cloud-ui-g1-bluexxx.ausvdc02.pcf.dell.com/?user=rahul_nagle@dell.com",
+      "Viewname": "Technical Validation Requests not yet dispositioned",
+      "Searchvalue": "OSC",
+      "Notes": "Test Note for the Notes Section Validation"
+    }
+  ],
+  "ViewList": [
+
+    {
+      "NoRec": "11",
+      "1": " All Validation Requests Dispositioned ",
+      "2": " Approved Validation Requests ",
+      "3": " Cancelled Validation Requests ",
+      "4": " CML Technical Validation Requests ",
+      "5": " Denied Validation Requests ",
+      "6": " EQL Technical Validation Requests ",
+      "7": " Pending Validation Requests ",
+      "8": " Technical Validation Requests not yet dispositioned ",
+      "9": "User Views",
+      "10": "TestView",
+      "11": "test",
+      "12": "ABHI",
+      "13": "xPODs in ABU Total View",
+      "14": "xPODS in APJ Total View",
+      "15": "xPODS in EMEA Total View"
+    }
+  ],
+  "Test5867945": [
+
+    {
+      "View1": "Technical Validation Requests not yet dispositioned",
+      "View2": "Pending Validation Requests",
+      "View3": "Approved Validation Requests",
+      "View4": "Cancelled Validation Requests",
+      "View5": "Denied Validation Requests"
+    }
+  ],
+  "TestData": [
+
+    {
+      "View": "AutomationView_TestAgain",
+      "EditOrdeType": "Upgrade New System",
+      "EditRegion": "APJ > ASIA",
+      "EditProduct": "Compellent FS8600 Enclosure",
+      "EditDealID": "Testing In progress",
+      "ViewDesc": "This view created for automation testing",
+      "EditViewname": "EditedTestViewCreated",
+      "EditViewdesc": "This is edited view description"
+
+    }
+  ],
+  "InstallationSec": [
+
+    {
+      "Addressline1": "TestAuto Address1",
+      "Addressline2": "TestAuto Address2",
+      "City": "TestAuto City",
+      "State": "TestAuto State",
+      "Country": "TestAuto Country",
+      "Zipcode": "123456"
+    }
+  ],
+  "SECList": [
+
+    {
+      "NoRec": "28",
+      "1": "Abhinanda Das",
+      "2": "Barbara Laurent",
+      "3": "Brian Gallagher",
+      "4": "Carolyn Doss",
+      "5": "Chris Saunders",
+      "6": "Guy Rowland",
+      "7": "Hideaki Suzuki",
+      "8": "Ilia Kigel",
+      "9": "John Sexton",
+      "10": "Joseph Laferriere",
+      "11": "Kala Allipilli",
+      "12": "Lewis Donworth",
+      "13": "Mark Schweizer",
+      "14": "Marouane Mechnassi",
+      "15": "Micah Thompson",
+      "16": "Niteen Karne",
+      "17": "Paul Phillips",
+      "18": "Robin Everett",
+      "19": "Rocky Chen",
+      "20": "Sanaa Moumen",
+      "21": "Seamus O'Donoghue",
+      "22": "Shiva Kumar",
+      "23": "Stacey King-Culpepper",
+      "24": "US Partner Direct",
+      "25": "Victor Williams",
+      "26": "Vikas Kumar",
+      "27": "Vivek TV",
+      "28": "Yang Cao"
+    }
+  ],
+  "InsertAppValRespAPJ": [
+
+    {
+      "1": "No Mezz I/O",
+      "2": "3TB/4TB DRIVES",
+      "3": "REPLICATION",
+      "4": "10GB COPPER",
+      "5": "BP Install",
+      "6": "FS8600",
+      "7": "10GbE OPTICAL",
+      "8": "SAS Cables",
+      "9": "DATA MIGRATION",
+      "10": "LSI 9206 SAS LP CARD",
+      "11": "SURLY SC2X0 SCOS REQT",
+      "12": "16GB FC CARD",
+      "13": "SC5020/SC7020 Voltage Requirements"
+    }
+  ],
+  "ValRespComments": [
+
+    {
+      "BP Install": "BP Certified"
+      
+    }
+  ]
+}

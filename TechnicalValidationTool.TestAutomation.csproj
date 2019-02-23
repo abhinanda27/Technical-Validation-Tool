@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+
+    <Configurations>Debug;Release;GE2G;GE4G;GE1G;GE1B</Configurations>
+
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GE2G|AnyCPU'">
+    <DefineConstants>TRACE;GE2G;</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath></OutputPath>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GE4G|AnyCPU'">
+    <DefineConstants>TRACE;GE4G;</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
+    <PackageReference Include="Selenium.Firefox.WebDriver" Version="0.23.0" />
+    <PackageReference Include="Selenium.Support" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="2.45.0" />
+    <PackageReference Include="Selenium.WebDriver.GeckoDriver.Win64" Version="0.23.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+    <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\GE1G\" />
+    <Folder Include="Data\GE1B\" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if $(ConfigurationName) == GE1B xcopy /c /e /y /f /i /r $(ProjectDir)Data\$(ConfigurationName)\*.* $(TargetDir)Data\&#xD;&#xA;if $(ConfigurationName) == GE1G xcopy /c /e /y /f /i /r $(ProjectDir)Data\$(ConfigurationName)\*.* $(TargetDir)Data\&#xD;&#xA;" />
+  </Target>
+
+</Project>
